@@ -1,0 +1,7 @@
+c8tests/
+
+c8games/
+
+*.bin
+
+*.o
