@@ -1,7 +1,7 @@
-c8tests/
+.*
 
-c8games/
+res/
 
-*.bin
+build/
 
-*.o
+bin/
