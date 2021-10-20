@@ -5,7 +5,7 @@
 
 // globals
 C8CPU* cpu = new C8CPU();
-int speed = 10; 
+int speed = 1; 
   
 void init()
 {
@@ -81,7 +81,6 @@ void keyboardRelease(unsigned char key, int x, int y)
 
 int main(int args, char ** argv)
 {
-    std::cout << "got here at lesat" << std::endl;
     if (args > 3) {
         std::cout << "Usage: ./chip8.bin -[filename] -[speed]" << std::endl;
         return -1;
@@ -91,8 +90,8 @@ int main(int args, char ** argv)
     cpu->filename = static_cast<std::string>(argv[1]);
     speed = static_cast<int>(*argv[2]);
     */
-    cpu->filename = static_cast<std::string>("./roms/pong.c8");
-    speed = 12;
+    cpu->filename = static_cast<std::string>("./roms/pong.ch8");
+    speed = 1;
     glutInit(&args, argv);
     glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
     glutInitWindowPosition(350, 100);

@@ -22,7 +22,7 @@ C8CPU::C8CPU()
 void C8CPU::openFile()
 {
     char buffer[romSize];
-    filename = "./roms/nonsense.c8";
+    filename = "./roms/pong.ch8";
     std::ifstream ifs(filename, std::ios::binary);
     ifs.seekg(0, std::ios::beg);
     ifs.read(&buffer[0x200], romSize);
