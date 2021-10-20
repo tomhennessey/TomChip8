@@ -2,8 +2,9 @@
 #include <fstream>
 #include <vector>
 #include <random>
-#include <GLUT/glut.h>
-#include "cpu.h"
+#include <cstring>
+#include <GL/glut.h>
+#include "../include/cpu.h"
 
 C8CPU::C8CPU()
 {
@@ -21,7 +22,7 @@ C8CPU::C8CPU()
 void C8CPU::openFile()
 {
     char buffer[romSize];
-    filename = "../res/c8games/PONG";
+    filename = "./roms/nonsense.c8";
     std::ifstream ifs(filename, std::ios::binary);
     ifs.seekg(0, std::ios::beg);
     ifs.read(&buffer[0x200], romSize);

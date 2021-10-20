@@ -3,7 +3,7 @@
 
 #include <vector>
 #include <string>
-#include <GLUT/glut.h>
+#include <GL/glut.h>
 #include "defines.h"
 
 class C8CPU {
